@@ -1,0 +1,37 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "A simple web scraping tool using Node Express, Mongoose.js, Horseman.js, Handlebars.js, and Cheerio.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangnabit/web-scraper.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Mongoose",
+    "Cheerio",
+    "Handlebars"
+  ],
+  "author": "Dan Gabel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangnabit/web-scraper/issues"
+  },
+  "homepage": "https://github.com/dangnabit/web-scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "mongoose": "^4.10.5",
+    "morgan": "^1.8.2",
+    "node-horseman": "^3.3.0",
+    "phantomjs": "^2.1.7"
+  }
+}
