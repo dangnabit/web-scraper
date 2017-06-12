@@ -5,7 +5,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var Horseman = require('node-horseman');
+var request = require('request')
 var mongoose = require('mongoose');
 var Note = require('./models/Note.js');
 var Article = require('./models/Article.js');
@@ -35,7 +35,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'));
 
 // Routes
-require('./controllers/html-routes.js')(app, Horseman, cheerio);
+require('./controllers/html-routes.js')(app, request, cheerio);
 
 
 // Database configuration with mongoose

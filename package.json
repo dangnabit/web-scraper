@@ -1,7 +1,7 @@
 {
   "name": "web-scraper",
   "version": "1.0.0",
-  "description": "A simple web scraping tool using Node Express, Mongoose.js, Horseman.js, Handlebars.js, and Cheerio.js",
+  "description": "A simple web scraping tool using Node Express, Mongoose.js, Request, Handlebars.js, and Cheerio.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,7 +31,6 @@
     "handlebars": "^4.0.10",
     "mongoose": "^4.10.5",
     "morgan": "^1.8.2",
-    "node-horseman": "^3.3.0",
-    "phantomjs": "^2.1.7"
+    "request": "^2.81.0"
   }
 }
