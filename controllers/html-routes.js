@@ -7,7 +7,7 @@ module.exports = function(app, request, cheerio, Article, Note) {
     Article.find({}).sort({_id: -1}).exec(function(error, data) {
       if (error) throw error;
       console.log(data);
-      res.render('index', { title: 'Web-Scraper', article: data });
+      res.render('index', { title:'Web Scraper', article: data });
     });
   });
 
@@ -93,7 +93,7 @@ module.exports = function(app, request, cheerio, Article, Note) {
 
         var entry = new Article(result[i]);
 
-        Article.update({
+        Article.findOneAndUpdate({
             title: entry.title
           },
           entry, {
@@ -104,10 +104,10 @@ module.exports = function(app, request, cheerio, Article, Note) {
               console.log(err);
             } else {
               // console.log(doc);
-              res.redirect('/');
             }
           });
       }
+      res.json(result);
     });
   });
 }
