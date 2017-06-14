@@ -35,7 +35,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'));
 
 // Routes
-require('./controllers/html-routes.js')(app, request, cheerio);
+require('./controllers/html-routes.js')(app, request, cheerio, Article, Note);
 
 
 // Database configuration with mongoose
