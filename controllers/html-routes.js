@@ -93,7 +93,7 @@ module.exports = function(app, request, cheerio, Article, Note) {
 
         var entry = new Article(result[i]);
 
-        Article.findOneAndUpdate({
+        Article.update({
             title: entry.title
           },
           entry, {
