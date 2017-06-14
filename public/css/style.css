@@ -24,6 +24,9 @@ body{
 	overflow:auto;
 	margin: auto;
 }
+.article-wrapper{
+	margin-bottom: 15px;
+}
 
 .author{
 	color:#0A9E01;
