@@ -1,0 +1,8 @@
+{
+  "name": "Start on Heroku: Node.js",
+  "description": "A simple web scraping tool using Node Express, Mongoose, Request and Cheerio.js ",
+  "repository": "https://github.com/dangnabit/web-scraper",
+  "logo": "",
+  "keywords": ["node", "express", "heroku", "cheerio", "mongoose", "request"],
+  "image": ""
+}

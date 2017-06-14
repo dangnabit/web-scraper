@@ -39,7 +39,7 @@ require('./controllers/html-routes.js')(app, request, cheerio, Article, Note);
 
 
 // Database configuration with mongoose
-mongoose.connect('mongodb://localhost/web-scraper');
+mongoose.connect('mongodb://heroku_4q1t7jzc:3fgmn1mp8argv6njdl6r2tm0i2@ds127892.mlab.com:27892/heroku_4q1t7jzc');
 var db = mongoose.connection;
 
 // Show any errors with mongoose
