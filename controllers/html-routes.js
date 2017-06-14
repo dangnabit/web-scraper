@@ -104,7 +104,7 @@ module.exports = function(app, request, cheerio, Article, Note) {
               console.log(err);
             } else {
               // console.log(doc);
-              res.redirect('/article');
+              res.redirect('/');
             }
           });
       }
