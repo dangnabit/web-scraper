@@ -52,6 +52,6 @@ $(document).on('click', '#scrape', function() {
     url: '/scrape'
   }).done(function(data) {
     console.log('Scrape Complete!');
-    window.reload();
+    location.reload();
   });
 });
