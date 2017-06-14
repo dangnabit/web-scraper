@@ -107,7 +107,7 @@ module.exports = function(app, request, cheerio, Article, Note) {
             }
           });
       }
-      res.json(result);
+      res.send('Scrape Complete!');
     });
   });
 }
